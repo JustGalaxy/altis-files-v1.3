@@ -4,7 +4,7 @@ _uidmaxou = getPlayerUID player;
 
 
 
-	if (_uidmaxou == "El Jacob") then
+	if (_uidmaxou == "6") then
     {
 		player addaction ["Admin menu", "core\WookieMenuV5.sqf", [], 1, false, true, "", ""];
 	};
