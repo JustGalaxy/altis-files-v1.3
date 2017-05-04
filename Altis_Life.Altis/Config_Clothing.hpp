@@ -30,8 +30,7 @@ class Clothing {
             { "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "", "", -1 } },
             { "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
             { "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "", "", -1 } },
-            { "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
-            { "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
+            { "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },  
             { "U_NikosAgedBody", "Casual Wears", 5000, { "", "", -1 } }
         };
         headgear[] = {
@@ -118,16 +117,22 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Cop Uniform", 0, { "", "", -1 } },
-            { "U_B_CombatUniform_mcam_tshirt", "", 0, { "life_coplevel", "SCALAR", 1 } },
+            { "U_B_CombatUniform_mcam_tshirt", "", 0, { "life_coplevel", "SCALAR", 2 } },
             { "U_B_CombatUniform_mcam_worn", "", 0, { "life_coplevel", "SCALAR", 2 } },
-            { "U_B_survival_uniform", "", 0, { "life_coplevel", "SCALAR", 1 } }
+			{ "U_I_FullGhillie_lsh", "Full Ghillie (Lush) [AAF]", 0, { "life_coplevel", "SCALAR", 5 } },
+			{ "U_I_FullGhillie_sard", "Full Ghillie (Semi-Arid) [AAF]", 0, { "life_coplevel", "SCALAR", 5 } },
+			{ "U_I_FullGhillie_ard", "Full Ghillie (Arid) [AAF]", 0, { "life_coplevel", "SCALAR", 5 } },
+			{ "U_I_G_resistanceLeader_F", "Combat Fatigue", 0, { "life_coplevel", "SCALAR", 3 } },
+            { "U_B_survival_uniform", "", 0, { "life_coplevel", "SCALAR", 2 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Cap_police", "", 0, { "", "", -1 } },
             { "H_Beret_blk_POLICE", "", 0, { "life_coplevel", "SCALAR", 2 } },
-            { "H_HelmetB_plain_mcamo", "", 0, { "life_coplevel", "SCALAR", 1 } },
+            { "H_HelmetB_plain_mcamo", "", 0, { "life_coplevel", "SCALAR", 2 } },
             { "H_MilCap_mcamo", "", 0, { "life_coplevel", "SCALAR", 2 } },
+			{ "H_HelmetB_camo", "", 0, { "life_coplevel", "SCALAR", 2 } },
+			{ "H_HelmetSpecB_blk", "", 0, { "life_coplevel", "SCALAR", 3 } },
             { "H_Booniehat_mcamo", "", 0, { "life_coplevel", "SCALAR", 1 } }
         };
         goggles[] = {
@@ -267,6 +272,10 @@ class Clothing {
             { "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
             { "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
             { "U_O_SpecopsUniform_ocamo", "", 17500, { "", "", -1 } },
+			{ "U_I_FullGhillie_lsh", "Full Ghillie (Lush) [AAF]", 25000, { "", "", -1 } },
+			{ "U_I_FullGhillie_sard", "Full Ghillie (Semi-Arid) [AAF]", 25000, { "", "", -1 } },
+			{ "U_I_FullGhillie_ard", "Full Ghillie (Arid) [AAF]", 25000, { "", "", -1 } },
+			{ "U_I_G_resistanceLeader_F", "Combat Fatigue", 10000, { "", "", -1 } },
             { "U_O_GhillieSuit", "", 50000, { "", "", -1 } }
         };
         headgear[] = {
@@ -276,6 +285,7 @@ class Clothing {
             { "H_ShemagOpen_tan", "", 850, { "", "", -1 } },
             { "H_Shemag_olive", "", 850, { "", "", -1 } },
             { "H_MilCap_oucamo", "", 1200, { "", "", -1 } },
+			{ "H_HelmetSpecB_blk", "", 1200, { "", "", -1 } },
             { "H_HelmetO_ocamo", "", 2500, { "", "", -1 } }
         };
         goggles[] = {

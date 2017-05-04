@@ -327,7 +327,10 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
-            { "Police", "cop", {
+            { "Patrol Car", "cop", {
+                "textures\cop\AFC_police_offroad.paa"
+            } },
+			{ "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
         };
@@ -374,6 +377,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
+            } },
+            { "Patrol Car", "cop", {
+                "textures\cop\police_white.paa"
             } },
             { "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
@@ -499,7 +505,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
-            { "Police", "cop", {
+            { "Patrol Car", "cop", {
+                "textures\cop\cop_white.paa"
+            } },            
+			{ "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
             } },
         };
@@ -538,9 +547,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 30000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Combat", "cop", {
+                "textures\cop\AFC_police_hunter01.paa",
             } }
         };
     };
@@ -562,7 +570,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 245000;
         textures[] = {
             { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+                "textures\cop\AFC_police_hummingbird.paa"
             } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
