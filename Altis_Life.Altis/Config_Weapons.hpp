@@ -195,7 +195,7 @@ class WeaponShops {
             { "HandGrenade_Stone", "Flashbang", 0, 0  },
             { "optic_Arco", "", 0, 0  },
 			{ "optic_Hamr", "", 0, 0  },
-            { "muzzle_snds_H", "", 2750, -1 }
+            { "muzzle_snds_H", "", 0, -1 }
         };
         mags[] = {
             { "9Rnd_45ACP_Mag", "", 0 },
