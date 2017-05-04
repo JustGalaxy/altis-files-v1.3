@@ -45,7 +45,6 @@ class CarShops {
             { "O_Truck_03_covered_F", { "", "", -1 } },
             { "B_Truck_01_box_F", { "", "", -1 } },
             { "O_Truck_03_device_F", { "", "", -1 } },
-            { "C_Van_01_fuel_F", { "", "", -1 } },
             { "I_Truck_02_fuel_F", { "", "", -1 } },
             { "B_Truck_01_fuel_F", { "", "", -1 } }
         };
@@ -650,23 +649,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"boat"}, {"cg"}, {""}, {""} };
         price = 150000;
         textures[] = {};
-    };
-
-        class C_Van_01_fuel_F {
-        vItemSpace = 20;
-        vFuelSpace = 19500;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 120000;
-        textures[] = {
-            { "White", "civ", {
-                "\A3\soft_f_gamma\Van_01\data\van_01_ext_co.paa",
-                "\A3\soft_f_gamma\Van_01\data\van_01_tank_co.paa"
-            } },
-            { "Red", "civ", {
-                "\A3\soft_f_gamma\Van_01\data\van_01_ext_red_co.paa",
-                "\A3\soft_f_gamma\Van_01\data\van_01_tank_red_co.paa"
-            } }
-        };
     };
 
     class I_Truck_02_fuel_F {
