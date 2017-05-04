@@ -6,7 +6,7 @@
     Description:
     All survival? things merged into one thread.
 */
-private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos"];
+private ["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos"];
 _fnc_food =  {
     if (life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";}
     else
@@ -105,24 +105,23 @@ for "_i" from 0 to 1 step 0 do {
         _lastPos = (_lastPos select 0) + (_lastPos select 1);
     };
     uiSleep 1;
-};
-
-[] spawn
-{
-	private["_bp","_load","_cfg"];
-	while{true} do
+	[] spawn
 	{
-		waitUntil {backpack player != ""};
-		_bp = backpack player;
-		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
-		_load = round(_cfg / 8);
-		life_maxWeight = life_maxWeight + _load;
-		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // <---- Sac invisible chez les flics
-		if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // <----- Sac Invisible chez les Medics
-		waitUntil {backpack player != _bp};
-		if(backpack player == "") then 
+		private["_bp","_load","_cfg"];
+		while{true} do
 		{
-			life_maxWeight = life_maxWeight;
+			waitUntil {backpack player != ""};
+			_bp = backpack player;
+			_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
+			_load = round(_cfg / 8);
+			life_maxWeight = life_maxWeightT + _load;
+			if(playerSide isEqualTo west) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // <---- Sac invisible chez les flics
+			if(playerSide isEqualTo independent) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // <----- Sac Invisible chez les Medics
+			waitUntil {backpack player != _bp};
+			if(backpack player isEqualTo "") then 
+			{
+				life_maxWeight = life_maxWeightT;
+			};
 		};
 	};
 };

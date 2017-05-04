@@ -1,4 +1,13 @@
-disableChannels[]={0,1,2};
+//--- Control Chat - Format: {channelID<number>, disableChat<bool>, disableVoice<bool>}
+disableChannels[] = {
+	{0, true, true}, //--- Global Chat
+	{1, false, true}, //--- Side Chat
+	{2, true, true}, //--- Command Chat
+	{3, false, false}, //--- Group Chat
+	{4, false, false}, //--- Vehicle Chat
+	{5, false, false}, //--- Direct Chat
+	{6, true, true} //--- System Chat
+};
 
 #include "Config_Spyglass.hpp"
 #include "CfgRemoteExec.hpp"
