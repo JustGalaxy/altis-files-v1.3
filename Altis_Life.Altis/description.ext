@@ -6,7 +6,6 @@ disableChannels[] = {
 	{3, false, false}, //--- Group Chat
 	{4, false, false}, //--- Vehicle Chat
 	{5, false, false}, //--- Direct Chat
-	{6, true, true} //--- System Chat
 };
 
 #include "Config_Spyglass.hpp"
